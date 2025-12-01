@@ -18,7 +18,7 @@ for ligne in d1:
    val = val % 100
 #   while(val > 100):
 #      val -= 100
-#       res2 += 1
+#      res2 += 1
    if(dir == 'R'):
       if(pos + val > 99):
           res2 +=1
