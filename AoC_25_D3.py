@@ -8,10 +8,8 @@ def pick_batteries(nb_digits) -> int:
     for ligne in d3:
         l1 = ligne[0:(len(ligne)-1)]
         for k in range(nb_digits-1,-1,-1):
-            l2 = l1[0:(len(l1)-k)]
-            d = max(l2)
-            rk = l2.index(d)
-            l1 = l1[(rk+1):]
+            d = max(l1[0:(len(l1)-k)])
+            l1 = l1[(l1.index(d)+1):]
             res += pow(10,k)*int(d)
     return res
 
